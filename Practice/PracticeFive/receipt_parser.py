@@ -9,7 +9,6 @@ with open(FILE_PATH, "r", encoding="utf-8") as file:
     text = file.read()
 
 
-
 names = re.findall("^\d+\.\s(^.*$)",text,re.MULTILINE | re.I)
 
 prices = (re.findall("^Стоимость\n(\d+)",text,re.MULTILINE))
