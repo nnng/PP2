@@ -20,10 +20,12 @@ for el in prices:
   totalCost +=int(el)
 payment = re.findall("Банк\w*\s*\w*|Налич\w*",text,re.MULTILINE| re.I)
 
-res = []
-for i in range(len(prices)):
-    res.append(f"Название : {names[i]} \n Цена : {prices[i]} \n")
-res.append(f"Общая сумма : {totalCost} \n Способ оплаты : {payment}")
+res = [f"Названия : \n {names}" , f"Цены : \n {prices}" , f"Общая сумма : \n {totalCost}" , f"Способ оплаты : \n {totalCost}"]
+
+
+# for i in range(len(prices)):
+#     res.append(f"Название : {names[i]} \n Цена : {prices[i]} \n")
+# res.append(f"Общая сумма : {totalCost} \n Способ оплаты : {payment}")
 
 
 with open("Practice/PracticeFive/output.json", "w", encoding="utf-8") as file:
