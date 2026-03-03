@@ -2,16 +2,17 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Создание вложенных папок
+
 nested_path = os.path.join(BASE_DIR, "project_data", "logs")
 
+# Создание вложенных папок
 os.makedirs(nested_path, exist_ok=True)
 
 print("Вложенные папки созданы.")
 
 
 #  Вывод списка файлов и папок 
-print("\nСодержимое directory_management:")
+print("\n directory_management:")
 
 for item in os.listdir(BASE_DIR):
     full_path = os.path.join(BASE_DIR, item)
