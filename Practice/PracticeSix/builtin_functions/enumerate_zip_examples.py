@@ -4,21 +4,21 @@ names = ["Alice", "Bob", "Charlie"]
 scores = [85, 92, 78]
 
 
-# ---------- 1. enumerate() ----------
+# enumerate()
 print("Список с индексами:")
 
 for index, name in enumerate(names):
     print(f"Индекс {index}: {name}")
 
 
-# ---------- 2. zip() ----------
+# zip() 
 print("\nОбъединение двух списков:")
 
 for name, score in zip(names, scores):
     print(f"{name} получил {score} баллов")
 
 
-# ---------- 3. enumerate() + zip() вместе ----------
+# enumerate() + zip() 
 print("\nНумерованный список результатов:")
 
 for index, (name, score) in enumerate(zip(names, scores), start=1):

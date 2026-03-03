@@ -3,7 +3,7 @@ import shutil
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# ---------- 1. Создаем тестовый файл ----------
+#  Создаем тестовый файл 
 test_file_path = os.path.join(BASE_DIR, "example.txt")
 
 with open(test_file_path, "w", encoding="utf-8") as file:
@@ -12,7 +12,7 @@ with open(test_file_path, "w", encoding="utf-8") as file:
 print("Тестовый файл создан.")
 
 
-# ---------- 2. Поиск файлов с расширением .txt ----------
+#  Поиск файлов с расширением .txt 
 print("\nНайденные .txt файлы:")
 
 for item in os.listdir(BASE_DIR):
@@ -20,7 +20,7 @@ for item in os.listdir(BASE_DIR):
         print(item)
 
 
-# ---------- 3. Копирование файла ----------
+# Копирование файла 
 destination_folder = os.path.join(BASE_DIR, "project_data")
 
 os.makedirs(destination_folder, exist_ok=True)
@@ -32,7 +32,7 @@ shutil.copy(test_file_path, copy_path)
 print("\nФайл скопирован в project_data.")
 
 
-# ---------- 4. Перемещение файла ----------
+#  Перемещение файла 
 move_path = os.path.join(destination_folder, "example_moved.txt")
 
 shutil.move(test_file_path, move_path)
