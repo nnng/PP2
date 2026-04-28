@@ -1,0 +1,29 @@
+{
+  "sound": true,
+  "car_color": "green",
+  "difficulty": "easy",
+  "target_distance": 5000,
+  "difficulty_profiles": {
+    "easy": {
+      "enemy_speed_base": 180,
+      "enemy_spawn_interval": 1.2,
+      "obstacle_spawn_interval": 2.0,
+      "coin_spawn_interval": 0.9,
+      "powerup_spawn_interval": 7.5
+    },
+    "normal": {
+      "enemy_speed_base": 220,
+      "enemy_spawn_interval": 1.0,
+      "obstacle_spawn_interval": 1.7,
+      "coin_spawn_interval": 0.8,
+      "powerup_spawn_interval": 6.5
+    },
+    "hard": {
+      "enemy_speed_base": 260,
+      "enemy_spawn_interval": 0.85,
+      "obstacle_spawn_interval": 1.4,
+      "coin_spawn_interval": 0.75,
+      "powerup_spawn_interval": 6.0
+    }
+  }
+}
