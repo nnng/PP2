@@ -1,0 +1,19 @@
+{
+  "window_width": 800,
+  "window_height": 800,
+  "grid_cols": 20,
+  "grid_rows": 20,
+  "snake_color": [46, 204, 113],
+  "food_color": [231, 76, 60],
+  "background_color": [20, 20, 20],
+  "show_grid": true,
+  "sound": false,
+  "base_fps": 8,
+  "level_up_food": 5,
+  "db_host": "localhost",
+  "db_port": 5432,
+  "db_name": "snake_db",
+  "db_user": "snake_user",
+  "db_password": "your_password",
+  "db_sslmode": "prefer"
+}
