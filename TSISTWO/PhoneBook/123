@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "nikita",
+    "surname": "gordeev",
+    "email": "nnn.gordeev@gmail.com",
+    "birthday": "2007-06-06",
+    "created_at": "2026-04-28 15:30:46",
+    "group": "friend",
+    "phones": [
+      {
+        "phone": "87471588495",
+        "type": "mobile"
+      }
+    ],
+    "full_name": "nikita gordeev"
+  }
+]
